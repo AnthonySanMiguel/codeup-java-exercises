@@ -3,6 +3,8 @@ public class HelloWorld {
         System.out.print("Hello ");
         System.out.println("World!");
 
+        // Java Exercises 3/19/19
+
         int myFavoriteNumber = 4;                   // Step 1
         System.out.println("Step 1: " + myFavoriteNumber);
 
