@@ -30,6 +30,10 @@ public class ConsoleExercises {
           System.out.println("Please enter a width");
           int width = Integer.parseInt(input.nextLine());
 
+          int area = length * width;
+          int perimeter = (2 * width) + (2 * length);
 
+          System.out.println("Perimeter = " + perimeter);
+          System.out.println("Area = " + area);
     }
 }

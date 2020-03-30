@@ -5,10 +5,10 @@ public class ControlFlowExercises {
 
 //        int i = 5;
 //        while(i <= 15){
-//            System.out.print(i + " ");
+//            System.out.print(i + " "); // Will output value of 'i' in the terminal in a horizontal line, with a space (" ") between each iteration.
 //            i++;
 //        }
-
+//
 //        for (int i = 5; i <= 15; i++) {
 //            System.out.print(i + " ");
 //        }

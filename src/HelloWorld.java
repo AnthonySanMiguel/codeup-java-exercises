@@ -1,16 +1,5 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.print("         -|                  [-_-_-_-_-_-_-_-]                  |-\n" +
-                "         [-_-_-_-_-]          |             |          [-_-_-_-_-]\n" +
-                "          | o   o |           [  0   0   0  ]           | o   o |\n" +
-                "           |     |    -|       |           |       |-    |     |\n" +
-                "           |     |_-___-___-___-|         |-___-___-___-_|     |\n" +
-                "           |  o  ]              [    0    ]              [  o  |\n" +
-                "           |     ]   o   o   o  [ _______ ]  o   o   o   [     | ----__________\n" +
-                "_____----- |     ]              [ ||||||| ]              [     |\n" +
-                "           |     ]              [ ||||||| ]              [     |\n" +
-                "       _-_-|_____]--------------[_|||||||_]--------------[_____|-_-_\n" +
-                "      ( (__________------------_____________-------------_________) )\n");
 //        System.out.println("World!");
 
         // Java Exercises 3/19/19
@@ -92,12 +81,12 @@ public class HelloWorld {
 //        d -= x;
 //        System.out.println("The value of c is %d and x is %d\n\n", c, d);
 
-//        byte myByte = 0;                          // Step 14
-//        int i = 0;
-//        while(i < 129){
-//            myByte++;
-//            i++;
-//        }
-//        System.out.println("Step 14: myByte = " + myByte + "\n");
+        byte myByte = 0;                          // Step 14
+        int i = 0;
+        while(i < 129){
+            myByte++;
+            i++;
+        }
+        System.out.println("Step 14: myByte = " + myByte + "\n");
     }
 }
