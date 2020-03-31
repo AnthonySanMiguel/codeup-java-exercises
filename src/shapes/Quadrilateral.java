@@ -1,13 +1,13 @@
 package shapes;
 
-abstract class Quadrilateral extends Shape implements Measurable {
+public abstract class Quadrilateral extends Shape implements Measurable {
     protected int length;
     protected int width;
 
     // the Quadrilateral constructor
-    public Quadrilateral(int quadLength, int quadWidth) {
-        this.length = quadLength;
-        this.width = quadWidth;
+    public Quadrilateral(int length, int width) {
+        this.length = length;
+        this.width = width;
         System.out.println("\nA quadrilateral is being created!\n");
     }
 
@@ -19,7 +19,7 @@ abstract class Quadrilateral extends Shape implements Measurable {
         return width;
     }
 
-    abstract void setLength();
-    abstract void setWidth();
+    public abstract void setLength(double length);
+    public abstract void setWidth(double width);
 
 }
