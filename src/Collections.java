@@ -9,15 +9,54 @@ public class Collections {
         // *************************************************** //
 
         // 1. Initialize an ArrayList of Strings, called roasts
+        ArrayList<String> roasts = new ArrayList<>();
+
         //   add light, medium, medium, dark to the array list, one at a time
+        roasts.add("light");
+        roasts.add("medium");
+        roasts.add("medium");
+        roasts.add("dark");
+
+        System.out.println(roasts);
+
         // 2. Check to see if the list contains "dark" , and then "espresso"
+        boolean result;
+        result = roasts.contains("dark");
+        System.out.println(result); // Return a boolean if it contains the data specified (e.g. true)
+
+        result = roasts.contains("espresso");
+        System.out.println(result); // Return a boolean if it contains the data specified (e.g. false)
+
         // 3. Find the last index of "medium" in the array
+        int index = roasts.lastIndexOf("medium");
+        System.out.println(index);
+
         // 4. Check if the array list is empty
+        result = roasts.isEmpty();
+        System.out.println(result);
+
         // 5. Assign the array list an empty ArrayList object, and then check if empty
+        ArrayList<String> emptyList = new ArrayList<>();
+        result = emptyList.isEmpty();
+        System.out.println(result);
+
+        // 5.a Add the espresso roast to the array and try to add it to an out of bounds index (e.g. index 9 when length is smaller)
+//        roasts.add(9, "espresso"); // Throws error
+        roasts.add("espresso");
+        System.out.println(roasts);
+
         // 6. Remove the espresso roast
+//        roasts.remove(4); // Remove specified index (e.g. value @ index 4)
+//        System.out.println(roasts);
+
+        roasts.remove("espresso"); // Remove specified value in array (e.g. "espresso")
+        System.out.println(roasts);
+
+        roasts.remove(roasts.lastIndexOf("medium")); // Will remove last medium instance from list
+
         // 7. Remove the element at index 2
-
-
+        roasts.remove(2);
+        System.out.println(roasts);
 
         // *************************************************** //
         // ********* Hash Maps and their Methods ************* //
