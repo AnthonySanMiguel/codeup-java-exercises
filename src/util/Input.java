@@ -21,7 +21,7 @@ public class Input {
         setScanner();
     }
 
-    private static void setScanner() {
+    public static void setScanner() {
         if (scanner == null) {
             scanner = new Scanner(System.in);
         }
@@ -39,7 +39,7 @@ public class Input {
      * @param prompt A prompt for the user (optional)
      * @return the String entered by the user
      */
-    public String getString(String prompt) {
+    public static String getString(String prompt) {
         if (scanner == null) setScanner();
         String s;
 
@@ -76,7 +76,7 @@ public class Input {
      * @param prompt A prompt for the user (optional)
      * @return the boolean corresponding to the user entry
      */
-    public boolean yesNo(String prompt) {
+    public static boolean yesNo(String prompt) {
         if (scanner == null) setScanner();
         boolean response;
 
@@ -109,7 +109,7 @@ public class Input {
      * @param prompt A prompt for the user (optional)
      * @return the number entered by the user
      */
-    public int getInt(String prompt) {
+    public static int getInt(String prompt) {
         if (scanner == null) setScanner();
         String userInput;
         int num;
@@ -135,7 +135,7 @@ public class Input {
      *
      * @return the number entered by the user
      */
-    public int getInt() {
+    public static int getInt() {
         return getInt(null);
     }
 
@@ -153,7 +153,7 @@ public class Input {
      * @param prompt A prompt for the user (optional)
      * @return the number entered by the user
      */
-    public int getInt(int min, int max, String prompt) {
+    public static int getInt(int min, int max, String prompt) {
         if (scanner == null) setScanner();
         int num = getInt(prompt);
         if (num < min || num > max) {
@@ -188,7 +188,7 @@ public class Input {
      * @param prompt A prompt for the user (optional)
      * @return the number entered by the user
      */
-    public double getDouble(String prompt) {
+    public static double getDouble(String prompt) {
         if (scanner == null) setScanner();
         String userInput;
         double num;
@@ -211,7 +211,7 @@ public class Input {
      *
      * @return the number entered by the user
      */
-    public double getDouble() {
+    public static double getDouble() {
         return getDouble(null);
     }
 
@@ -229,7 +229,7 @@ public class Input {
      * @param prompt A prompt for the user (optional)
      * @return the number entered by the user
      */
-    public double getDouble(double min, double max, String prompt) {
+    public static double getDouble(double min, double max, String prompt) {
         if (scanner == null) setScanner();
         double num;
         num = getDouble(prompt);

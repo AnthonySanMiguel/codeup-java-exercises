@@ -28,7 +28,7 @@ public class GradesApplication {
         System.out.println("\t" + students.keySet());
 
         Scanner scanner = new Scanner(System.in);
-        Input.setScanner(scanner);
+        Input.setScanner();
 
         String ghUser;
         boolean confirmation = true;

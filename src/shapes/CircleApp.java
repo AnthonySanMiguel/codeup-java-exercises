@@ -8,7 +8,7 @@ public class CircleApp {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Input.setScanner(scanner);
+        Input.setScanner();
 
         boolean goAgain = false;
         do {

@@ -18,7 +18,7 @@ public class MoviesApplication {
         //Give the user a list of options for viewing all the movies or viewing movies by category.
         Input input = new Input();
         Scanner scanner = new Scanner(System.in);
-        Input.setScanner(scanner);
+        Input.setScanner();
         Movie[] movieList = MoviesArray.findAll();
 
         genres = getGenres(movieList);
